@@ -14,6 +14,9 @@
 #Como rodar a aplicação:
 
 
+#Imagem dos diagramas:
+
+
 #Vídeo do youtube: https://www.youtube.com/watch?v=ltjadLAPTAg
 
 #Endpoints
