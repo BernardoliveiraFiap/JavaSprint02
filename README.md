@@ -32,7 +32,7 @@ Acesse a aplicação em um navegador da web ou faça solicitações HTTP usando 
 # Vídeo do youtube: https://www.youtube.com/watch?v=ltjadLAPTAg
 
 
-# Endpoints: na pasta documents
+Endpoints: na pasta documents
 
 ![image](https://github.com/BernardoliveiraFiap/JavaSpringSprint1/assets/126569987/2554ae96-b1d6-4985-a637-556ad3df2c94)
 
