@@ -11,12 +11,12 @@
 # João Vitor 550381 - Testar rotas
 
 
-#Como rodar a aplicação:
+# Como rodar a aplicação:
 
 
-#Imagem dos diagramas:
+# Imagem dos diagramas:
 
 
-#Vídeo do youtube: https://www.youtube.com/watch?v=ltjadLAPTAg
+# Vídeo do youtube: https://www.youtube.com/watch?v=ltjadLAPTAg
 
-#Endpoints: na pasta documents
+# Endpoints: na pasta documents
