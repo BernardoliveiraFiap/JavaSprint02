@@ -28,8 +28,12 @@ Acesse a aplicação em um navegador da web ou faça solicitações HTTP usando 
 # Imagem dos diagramas:
 ![image](https://github.com/BernardoliveiraFiap/JavaSpringSprint1/assets/126569987/c0e28e1d-92e0-474c-8d83-584167878c84)
 
+# Imagem DER: 
+![image](https://github.com/BernardoliveiraFiap/JavaSpringSprint1/assets/126569987/d8c70218-e9b9-4df5-95e5-29ef09a0f007)
+
+
 
 # Vídeo do youtube: https://www.youtube.com/watch?v=ltjadLAPTAg
 
 
-Endpoints: na pasta documents
+# Endpoints: 
