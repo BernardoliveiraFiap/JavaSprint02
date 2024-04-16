@@ -33,9 +33,6 @@ Acesse a aplicação em um navegador da web ou faça solicitações HTTP usando 
 
 
 
-# Vídeo do youtube: https://www.youtube.com/watch?v=ltjadLAPTAg
-
-
 # Endpoints: 
 GET - localhost/AdmEstoque/{id}
 GET - localhost/AdmEstoque
@@ -69,3 +66,5 @@ POST- localhost/morador
 GET - localhost/respcond/{id}
 GET - localhost/respcond
 POST- localhost/respcond
+
+# Vídeo do youtube: https://www.youtube.com/watch?v=ltjadLAPTAg
