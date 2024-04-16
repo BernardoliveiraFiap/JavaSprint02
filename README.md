@@ -34,6 +34,7 @@ Acesse a aplicação em um navegador da web ou faça solicitações HTTP usando 
 
 
 # Endpoints: 
+
 GET - localhost/AdmEstoque/{id}
 GET - localhost/AdmEstoque
 POST- localhost/AdmEstoque
