@@ -37,32 +37,32 @@ Acesse a aplicação em um navegador da web ou faça solicitações HTTP usando 
 GET - localhost/AdmEstoque/{id}
 GET - localhost/AdmEstoque
 POST- localhost/AdmEstoque
- 
+---------------------------------
  
 GET - localhost/cadcond/{id}
 GET - localhost/cadcond
 POST- localhost/cadcond
- 
+---------------------------------
 GET - localhost/cadestoque/{id}
 GET - localhost/cadestoque
 POST- localhost/cadestoque
- 
+---------------------------------
 GET - localhost/cadusuario/{id}
 GET - localhost/cadusuario
 POST - localhost/cadusuario
- 
+--------------------------------- 
 GET - localhost/encomenda/{id}
 GET - localhost/encomenda
 POST- localhost/encomenda
- 
+--------------------------------- 
 GET - localhost/login/{id}
 GET - localhost/login
 POST- localhost/login
- 
+--------------------------------- 
 GET - localhost/morador/{id}
 GET - localhost/morador
 POST- localhost/morador
- 
+--------------------------------- 
 GET - localhost/respcond/{id}
 GET - localhost/respcond
 POST- localhost/respcond
