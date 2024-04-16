@@ -14,7 +14,7 @@
 # Como rodar a aplicação:
 
 
-Imagem dos diagramas:
+# Imagem dos diagramas:
 ![image](https://github.com/BernardoliveiraFiap/JavaSpringSprint1/assets/126569987/c0e28e1d-92e0-474c-8d83-584167878c84)
 
 
