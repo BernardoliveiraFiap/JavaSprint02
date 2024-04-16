@@ -67,5 +67,5 @@ POST- localhost/morador
 GET - localhost/respcond/{id}
 GET - localhost/respcond
 POST- localhost/respcond
-
+--------------------------------- 
 # Vídeo do youtube: https://www.youtube.com/watch?v=ltjadLAPTAg
