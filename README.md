@@ -12,6 +12,17 @@
 
 
 # Como rodar a aplicação:
+1. Configuração do Ambiente de Desenvolvimento:
+Certifique-se de ter o Java Development Kit (JDK) instalado na sua máquina.
+2. Configuração do Projeto:
+Clone o repositório do projeto ou crie um novo projeto Spring Boot usando uma ferramenta de desenvolvimento integrado (IDE) como IntelliJ IDEA, Eclipse ou Spring Tool Suite.
+Configure as dependências e propriedades do projeto, incluindo a configuração do banco de dados no arquivo application-homologacao.yml.
+3. Configuração do Banco de Dados:
+Certifique-se de ter um banco de dados configurado e em execução. Configure as credenciais e a URL do banco de dados no arquivo de configuração application-homologacao.yml.
+4. Execução da Aplicação:
+Execute a aplicação Spring Boot localmente, usando a IDE ou a linha de comando.
+5. Teste:
+Acesse a aplicação em um navegador da web ou faça solicitações HTTP usando ferramentas como Postman para verificar se está funcionando conforme o esperado.
 
 
 # Imagem dos diagramas:
