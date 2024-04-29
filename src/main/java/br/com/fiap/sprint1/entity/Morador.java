@@ -42,5 +42,5 @@ public class Morador {
             )
     )
 
-    private RespCond respCond;
+    private Resposavel resposavel;
 }

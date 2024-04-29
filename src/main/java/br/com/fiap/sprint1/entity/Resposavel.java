@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @Entity
 @Table(name = "TB_RESP_COND")
-public class RespCond {
+public class Resposavel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_RESP_COND")
@@ -21,11 +21,11 @@ public class RespCond {
     private Long id;
 
     @Column(name = "NM_RESP_COND")
-    private String nm_resp_cond;
+    private String nome;
 
     @Column(name = "CPF_RESP_COND")
-    private String cpf_resp_cond;
+    private String cpf;
 
     @Column(name = "FN_RESP_COND")
-    private String fn_resp_cond;
+    private String telefone;
 }

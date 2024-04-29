@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @Entity
 @Table(name = "TB_CAD_COND")
-public class CadCond {
+public class Condominio {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_CAD_COND")
@@ -21,16 +21,16 @@ public class CadCond {
     private Long id;
 
     @Column(name = "CPNJ_CACO")
-    private String cpnj_caco;
+    private String cpnj;
 
     @Column(name = "NM_CACO")
-    private String nm_caco;
+    private String nome;
 
     @Column(name = "END_CACO")
-    private String end_caco;
+    private String endereco;
 
     @Column(name = "FN_CACO")
-    private String fn_caco;
+    private String telefone;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(
@@ -41,7 +41,7 @@ public class CadCond {
             )
     )
 
-    private RespCond cadastroCond;
+    private Resposavel cadastro;
 
 
 }
