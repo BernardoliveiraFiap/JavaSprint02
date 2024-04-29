@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @Entity
 @Table(name = "TB_CAD_USUARIO")
-public class CadUsuario {
+public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_CAD_USUARIO")
@@ -21,22 +21,22 @@ public class CadUsuario {
     private Long id;
 
     @Column(name = "US_CA_US")
-    private String us_ca_us;
+    private String usuario;
 
     @Column(name = "SN_CA_US")
-    private String sn_ca_us;
+    private String senha;
 
     @Column(name= "NM_CA_US")
-    private String nm_ca_us;
+    private String nome;
 
     @Column(name = "CPF_CA_US")
-    private String cpf_ca_us;
+    private String cpf;
 
     @Column(name = "END_CA_US")
-    private String end_ca_us;
+    private String endereco;
 
     @Column(name = "FN_CA_US")
-    private String fn_ca_us;
+    private String telefone;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(
@@ -47,6 +47,6 @@ public class CadUsuario {
             )
     )
 
-    private RespCond ResCad;
+    private Resposavel Responsavel;
 
 }

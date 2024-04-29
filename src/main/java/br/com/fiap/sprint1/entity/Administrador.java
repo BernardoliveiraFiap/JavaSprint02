@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @Entity
 @Table(name = "TB_ADM_ESTOQUE")
-public class AdmEstoque{
+public class Administrador{
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_ADM_ESTOQUE")
@@ -21,13 +21,13 @@ public class AdmEstoque{
     private Long id;
 
     @Column(name = "NM_ADMEST")
-    private String nm_admest;
+    private String nome;
 
     @Column(name = "US_ADMEST")
-    private String us_admest;
+    private String usuario;
 
     @Column(name = "SN_ADMEST")
-    private String sn_admest;
+    private String senha;
 
     @OneToOne(fetch = FetchType.EAGER,cascade = {CascadeType.MERGE,CascadeType.PERSIST})
     @JoinColumn(

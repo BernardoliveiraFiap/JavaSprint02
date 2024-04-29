@@ -51,5 +51,5 @@ public class Encomenda {
             )
     )
 
-    private AdmEstoque administrador;
+    private Administrador administrador;
 }

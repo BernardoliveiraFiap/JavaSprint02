@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class CadEstoque {
+public class Estoque {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_CAD_ESTOQUE")
     @SequenceGenerator(
@@ -27,16 +27,16 @@ public class CadEstoque {
     private Long id;
 
     @Column(name = "NM_CAES")
-    private String nm_caes;
+    private String nome;
 
     @Column(name = "END_CAES")
-    private String end_caes;
+    private String endereco;
 
     @Column(name = "CGD_CAES")
     private String cgd_caes;
 
     @Column(name = "STT_CAES")
-    private String stt_caes;
+    private String status;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(
@@ -47,5 +47,5 @@ public class CadEstoque {
             )
     )
 
-    private AdmEstoque admin;
+    private Administrador administrador;
 }
