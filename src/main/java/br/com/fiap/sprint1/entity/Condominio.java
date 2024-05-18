@@ -41,7 +41,7 @@ public class Condominio {
             )
     )
 
-    private Resposavel cadastro;
+    private Responsavel responsavel;
 
 
 }

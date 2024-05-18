@@ -33,7 +33,7 @@ public class Estoque {
     private String endereco;
 
     @Column(name = "CGD_CAES")
-    private String cgd_caes;
+    private String chegada;
 
     @Column(name = "STT_CAES")
     private String status;

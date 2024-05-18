@@ -21,13 +21,13 @@ public class Encomenda {
     private Long id;
 
     @Column(name = "NM_EN")
-    private String nm_en;
+    private String nome;
 
     @Column(name = "CPF_DEST_EN")
-    private String cpf_dest_en;
+    private String cpf;
 
     @Column(name = "NM_DEST_EN")
-    private String nm_dest_en;
+    private String destinatario;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(

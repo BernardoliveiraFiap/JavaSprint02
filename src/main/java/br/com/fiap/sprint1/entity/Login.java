@@ -21,10 +21,10 @@ public class Login {
     private Long id;
 
     @Column(name = "US_LG")
-    private String us_lg;
+    private String username;
 
     @Column(name = "SN_LG")
-    private String sn_lg;
+    private String password;
 
     @OneToOne(fetch = FetchType.EAGER,cascade = {CascadeType.MERGE,CascadeType.PERSIST})
     @JoinColumn(

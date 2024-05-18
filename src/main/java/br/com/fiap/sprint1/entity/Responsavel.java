@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @Entity
 @Table(name = "TB_RESP_COND")
-public class Resposavel {
+public class Responsavel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_RESP_COND")
@@ -28,4 +28,5 @@ public class Resposavel {
 
     @Column(name = "FN_RESP_COND")
     private String telefone;
+
 }

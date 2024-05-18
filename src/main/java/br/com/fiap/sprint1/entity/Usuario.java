@@ -21,10 +21,10 @@ public class Usuario {
     private Long id;
 
     @Column(name = "US_CA_US")
-    private String usuario;
+    private String username;
 
     @Column(name = "SN_CA_US")
-    private String senha;
+    private String password;
 
     @Column(name= "NM_CA_US")
     private String nome;
@@ -47,6 +47,6 @@ public class Usuario {
             )
     )
 
-    private Resposavel Responsavel;
+    private Responsavel responsavel;
 
 }

@@ -24,10 +24,10 @@ public class Administrador{
     private String nome;
 
     @Column(name = "US_ADMEST")
-    private String usuario;
+    private String username;
 
     @Column(name = "SN_ADMEST")
-    private String senha;
+    private String password;
 
     @OneToOne(fetch = FetchType.EAGER,cascade = {CascadeType.MERGE,CascadeType.PERSIST})
     @JoinColumn(

@@ -1,13 +1,117 @@
 {
 	"info": {
-		"_postman_id": "8793459d-1b81-42f9-a779-06fb096af0e8",
-		"name": "Estoque facil",
+		"_postman_id": "2e224252-f8ea-4fdc-88b7-1d1258efccf7",
+		"name": "Estoque",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "30769724"
 	},
 	"item": [
 		{
-			"name": "localhost/AdmEstoque",
+			"name": "localhost/responsavel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/responsavel",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"responsavel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/responsavel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Bernardo\",\r\n  \"cpf\": \"123.123.123-40\",\r\n  \"telefone\": \"11999999999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/responsavel",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"responsavel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/responsavel/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/responsavel/22",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"responsavel",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/condominios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/condominios",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"condominios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/condominios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cpnj\": \"12331312412\",\r\n  \"nome\": \"Condominio Italia\",\r\n  \"endereco\": \"Av.Paulista\",\r\n  \"telefone\": \"11923242526\",\r\n  \"responsavel\": {\r\n    \"id\": 22\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/condominios",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"condominios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/condominios/{id}",
 			"request": {
 				"method": "GET",
 				"header": []
@@ -15,16 +119,30 @@
 			"response": []
 		},
 		{
-			"name": "localhost/AdmEstoque/{id}",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
+			"name": "localhost/usuarios",
 			"request": {
 				"method": "GET",
 				"header": [],
+				"url": {
+					"raw": "localhost/usuarios",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/usuarios",
+			"request": {
+				"method": "POST",
+				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\r\n  \"username\": \"colossal\",\r\n  \"password\": \"12341234\",\r\n  \"nome\": \"Matheus Colossal Araujo\",\r\n  \"cpf\": \"123.123.123-12\",\r\n  \"endereco\": \"Av.Paulista\",\r\n  \"telefone\": \"11923232323\",\r\n  \"responsavel\": {\r\n    \"id\": 22\r\n  }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -32,12 +150,29 @@
 					}
 				},
 				"url": {
-					"raw": "localhost/AdmEstoque/1",
+					"raw": "localhost/usuarios",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"AdmEstoque",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/usuarios/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/usuarios/1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"usuarios",
 						"1"
 					]
 				}
@@ -45,13 +180,30 @@
 			"response": []
 		},
 		{
-			"name": "localhost/AdmEstoque",
+			"name": "localhost/moradores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/moradores",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moradores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/moradores",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nm_admest\": \"Matheus\",\r\n    \"us_admest\": \"Colossal\",\r\n    \"sn_admest\": \"1234\",\r\n    \"login\": null\r\n}",
+					"raw": "{\r\n  \"nome\": \"Joao\",\r\n  \"cpf\": \"123.123.123-40\",\r\n  \"telefone\": \"11923232323\",\r\n  \"endereco\": \"Av.Paulista\",\r\n  \"responsavel\": {\r\n    \"id\": 22\r\n  }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -59,255 +211,30 @@
 					}
 				},
 				"url": {
-					"raw": "localhost/AdmEstoque",
+					"raw": "localhost/moradores",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"AdmEstoque"
+						"moradores"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "localhost/cadcond",
+			"name": "localhost/moradores/{id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost/cadcond",
+					"raw": "localhost/moradores/2",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"cadcond"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost/cadcond/{id}",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost/cadcond/1",
-					"host": [
-						"localhost"
-					],
-					"path": [
-						"cadcond",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost/cadcond",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"cpnj_caco\": \"46.379.400/0001-50\",\r\n    \"nm_caco\": \"Abravanel\",\r\n    \"end_caco\": \"rua 2\",\r\n    \"fn_caco\": \"11930303030\",\r\n    \"cadastroCond\": null\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost/cadcond",
-					"host": [
-						"localhost"
-					],
-					"path": [
-						"cadcond"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost/cadestoque",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost/cadestoque",
-					"host": [
-						"localhost"
-					],
-					"path": [
-						"cadestoque"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost/cadestoque/{id}",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost/cadestoque/1",
-					"host": [
-						"localhost"
-					],
-					"path": [
-						"cadestoque",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost/cadestoque",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"nm_caes\": \"Nome do Estoque\",\r\n    \"end_caes\": \"Endereço do Estoque\",\r\n    \"cgd_caes\": \"Código do Estoque\",\r\n    \"stt_caes\": \"Status do Estoque\",\r\n    \"admin\": null\r\n}\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost/cadestoque",
-					"host": [
-						"localhost"
-					],
-					"path": [
-						"cadestoque"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost/cadusuario",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost/cadusuario",
-					"host": [
-						"localhost"
-					],
-					"path": [
-						"cadusuario"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost/cadusuario/{id}",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost/encomenda",
-					"host": [
-						"localhost"
-					],
-					"path": [
-						"encomenda"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost/cadusuario",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"us_ca_us\": \"usuario123\",\r\n    \"sn_ca_us\": \"senha123\",\r\n    \"nm_ca_us\": \"Nome do Usuário\",\r\n    \"cpf_ca_us\": \"123.456.789-00\",\r\n    \"end_ca_us\": \"Endereço do Usuário\",\r\n    \"fn_ca_us\": \"Função do Usuário\",\r\n    \"ResCad\": null\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost/cadusuario",
-					"host": [
-						"localhost"
-					],
-					"path": [
-						"cadusuario"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost/encomenda",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost/encomenda",
-					"host": [
-						"localhost"
-					],
-					"path": [
-						"encomenda"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost/encomenda/{id}",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost/encomenda/1",
-					"host": [
-						"localhost"
-					],
-					"path": [
-						"encomenda",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost/encomenda",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"nm_en\": \"Nome da Encomenda\",\r\n    \"cpf_dest_en\": \"123.456.789-00\",\r\n    \"nm_dest_en\": \"Nome do Destinatário\",\r\n    \"pessoa\": null,\r\n    \"administrador\": null\r\n}\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost/encomenda",
-					"host": [
-						"localhost"
-					],
-					"path": [
-						"encomenda"
+						"moradores",
+						"2"
 					]
 				}
 			},
@@ -318,6 +245,32 @@
 			"request": {
 				"method": "GET",
 				"header": [],
+				"url": {
+					"raw": "localhost/login",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"JoaoVitor\",\r\n  \"password\": \"1234\",\r\n  \"morador\": {\r\n    \"id\": 2\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "localhost/login",
 					"host": [
@@ -334,28 +287,35 @@
 			"name": "localhost/login/{id}",
 			"request": {
 				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/administradores",
+			"request": {
+				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost/login/{id}",
+					"raw": "localhost/administradores",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"login",
-						"{id}"
+						"administradores"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "localhost/login",
+			"name": "localhost/administradores",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"us_lg\": \"nome_de_usuario\",\r\n    \"sn_lg\": \"senha_de_login\",\r\n    \"morador\": null\r\n}\r\n",
+					"raw": "{\r\n  \"nome\": \"Joao\",\r\n  \"username\": \"JoaoVitor\",\r\n  \"password\": \"1234\",\r\n  \"login\": {\r\n    \"id\": 1\r\n  }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -363,46 +323,90 @@
 					}
 				},
 				"url": {
-					"raw": "localhost/login",
+					"raw": "localhost/administradores",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"login"
+						"administradores"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "localhost/morador",
+			"name": "localhost/administradores/{id}",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost/morador",
+					"raw": "localhost/administradores/21",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"morador"
+						"administradores",
+						"21"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "localhost/morador/{id}",
+			"name": "localhost/encomendas",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost/morador/1",
+					"raw": "localhost/encomendas",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"morador",
+						"encomendas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/encomendas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"matheus\",\r\n  \"cpf\": \"123.123.124-40\",\r\n  \"destinatario\": \"Matheus Colossal Araujo\",\r\n  \"administrador\": {\r\n    \"id\":21\r\n  },\r\n  \"pessoa\": {\r\n    \"id\": 1\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/encomendas",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"encomendas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/encomendas/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/encomendas/1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"encomendas",
 						"1"
 					]
 				}
@@ -410,89 +414,27 @@
 			"response": []
 		},
 		{
-			"name": "localhost/morador",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"nm_mrd\": \"Nome do Morador\",\r\n    \"cpf_mrd\": \"123.456.789-00\",\r\n    \"fn_mrd\": \"Função do Morador\",\r\n    \"end_mrd\": \"Endereço do Morador\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost/morador",
-					"host": [
-						"localhost"
-					],
-					"path": [
-						"morador"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost/respcond",
+			"name": "localhost/estoques",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost/respcond",
+					"raw": "localhost/estoques",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"respcond"
+						"estoques"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "localhost/respcond/{id}",
+			"name": "localhost/estoques",
 			"request": {
 				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost/respcond/1",
-					"host": [
-						"localhost"
-					],
-					"path": [
-						"respcond",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost/respcond",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"nm_resp_cond\": \"Nome do Responsável\",\r\n    \"cpf_resp_cond\": \"123.456.789-00\",\r\n    \"fn_resp_cond\": \"Função do Responsável\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost/respcond",
-					"host": [
-						"localhost"
-					],
-					"path": [
-						"respcond"
-					]
-				}
+				"header": []
 			},
 			"response": []
 		}

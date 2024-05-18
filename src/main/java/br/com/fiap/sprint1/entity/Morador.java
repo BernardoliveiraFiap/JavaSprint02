@@ -21,16 +21,16 @@ public class Morador {
     private Long id;
 
     @Column(name = "NM_MRD")
-    private String nm_mrd;
+    private String nome;
 
     @Column(name = "CPF_MRD")
-    private String cpf_mrd;
+    private String cpf;
 
     @Column(name = "FN_MRD")
-    private String fn_mrd;
+    private String telefone;
 
     @Column(name = "END_MRD")
-    private String end_mrd;
+    private String endereco;
 
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
@@ -42,5 +42,5 @@ public class Morador {
             )
     )
 
-    private Resposavel resposavel;
+    private Responsavel responsavel;
 }
