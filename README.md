@@ -34,7 +34,8 @@
 
 ## Diagrama de Classes
 
-![Diagrama](https://github.com/colossalmatheus/JavaSprint02/assets/125572827/964463c9-6e89-4612-9678-59c8d7f7a26c)
+![Diagrama](https://github.com/colossalmatheus/JavaSprint02/assets/125572827/d7e8ac54-9171-4a36-9518-2e7a34fa194c)
+
 
 ## DER
 
